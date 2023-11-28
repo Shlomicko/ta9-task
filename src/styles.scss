@@ -1,0 +1,19 @@
+@import "assets/css/colors";
+
+html {
+  font-size: 62.5%;
+  height: 100%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: Roboto, sans-serif;
+  background-color: $color-yellow-warm;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+
+   * {
+     box-sizing: border-box;
+   }
+}

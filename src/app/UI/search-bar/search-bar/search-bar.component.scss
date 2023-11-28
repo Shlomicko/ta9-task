@@ -1,0 +1,19 @@
+:host {
+  display: flex;
+  margin-bottom: 2rem;
+}
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  padding: .5rem;
+  width: 100%;
+  background-color: white;
+
+  .input-control {
+    padding: 1rem;
+    width: 100%;
+    outline: none;
+    border: none;
+  }
+}
+

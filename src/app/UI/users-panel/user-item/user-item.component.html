@@ -1,0 +1,6 @@
+<div (click)="onUserItemClick()" class="user line-item-grid" [ngClass]="{'grid': layout==='grid'}">
+  <div *ngIf="layout === 'list'" class="user__id">{{user.id}}</div>
+  <div class="user__name">{{user.name}}</div>
+  <div class="user__email">{{user.email}}</div>
+  <div class="user__phone">{{user.phone}}</div>
+</div>

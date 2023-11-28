@@ -1,0 +1,29 @@
+
+.list-layout {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  row-gap: 1rem;
+
+  .user-item {
+    display: block;
+    width: calc(100%);
+    transition: 0.3s;
+  }
+}
+
+.grid-layout {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 2rem;
+  margin-top: 2rem;
+
+  .user-item {
+    display: block;
+    width: 25rem;
+    height: 25rem;
+    transition: 0.5s;
+  }
+}

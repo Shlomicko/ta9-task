@@ -1,0 +1,62 @@
+@import "assets/css/colors";
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 1em;
+  color: $color-yellow-bright;
+  background-color: $color-green-dark;
+
+  .close-button {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    cursor: pointer;
+  }
+
+  .items-form {
+    display: flex;
+    flex-direction: column;
+
+    &__label {
+      margin-bottom: .8rem;
+    }
+
+    &__input {
+      padding: .8rem;
+      margin-bottom: 1.6rem;
+      width: 100%;
+    }
+
+    &__buttons {
+      display: flex;
+      justify-content: space-between;
+
+      &--submit {
+
+        &:disabled {
+          opacity: .8;
+          background-color: $color-green-lite;
+          pointer-events: none;
+        }
+      }
+
+      &--submit, &--clear {
+        cursor: pointer;
+        min-width: 15rem;
+        padding: 1rem;
+        opacity: 1;
+        border-radius: .8rem;
+        outline: none;
+        border: none;
+        background-color: $color-yellow-cold;
+
+        &:hover {
+          background-color: $color-yellow-bright;
+        }
+      }
+    }
+  }
+}
+

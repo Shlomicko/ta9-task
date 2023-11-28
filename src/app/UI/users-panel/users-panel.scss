@@ -1,0 +1,15 @@
+.line-item-grid {
+  display: grid;
+  text-align: start;
+  grid-template-columns: 3rem 2fr 1fr 1fr 1rem;
+
+  >div {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  @media (max-width: 80rem) {
+    grid-template-columns: 2rem 1fr 1fr 1fr 1fr;
+  }
+}

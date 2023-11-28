@@ -1,0 +1,12 @@
+<div class="input-wrapper">
+  <i></i>
+  <mat-icon [svgIcon]="'search'"></mat-icon>
+  <input
+    type="text"
+    class="input-control"
+    [placeholder]="placeholder"
+    [formControl]="valueControl"
+    (input)="onInputChange($event)"
+    (blur)="onTouched()"
+  />
+</div>

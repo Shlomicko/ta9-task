@@ -1,0 +1,22 @@
+@import 'assets/css/colors';
+
+.actions-wrapper {
+  display: flex;
+  column-gap: 1rem;
+  justify-content: flex-end;
+
+
+  &__button {
+    cursor: pointer;
+    border-radius: .2rem;
+    opacity: .4;
+
+    &:hover, &.active {
+      opacity: 1;
+    }
+
+    &.active {
+      pointer-events: none;
+    }
+  }
+}

@@ -1,0 +1,10 @@
+<app-action-buttons
+  (setGridView)="onSetGridViewClick()"
+  (setListView)="onSetListViewClick()">
+</app-action-buttons>
+<app-search-bar placeholder="Search users" [formControl]="queryControl"></app-search-bar>
+<app-items-list-header *ngIf="itemsLayout === 'list'"></app-items-list-header>
+<app-items-list [layout]="itemsLayout" [users]="usersData$ | async"></app-items-list>
+<div class="form-wrap" [class.open]="(showForm$ | async)?.show">
+  <app-user-form class="form-panel"></app-user-form>
+</div>

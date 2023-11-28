@@ -1,0 +1,30 @@
+@import "assets/css/colors";
+
+:host {
+  display: block;
+  margin: 5rem;
+  height: 100%;
+}
+
+.form-wrap {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 30em;
+  transform: translateX(100%);
+  transition: .3s ease-out;
+
+  &.open {
+    transform: translateX(0);
+  }
+
+  .form-panel {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: auto;
+  }
+}

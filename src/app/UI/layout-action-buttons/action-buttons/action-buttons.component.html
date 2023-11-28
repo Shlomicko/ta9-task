@@ -1,0 +1,11 @@
+<div class="actions-wrapper">
+  <div class="actions-wrapper__button" [class.active]="activeLayout==='list'" role="button" (click)="onListClick()">
+    <mat-icon svgIcon="{{listIconName}}"></mat-icon>
+  </div>
+  <div class="actions-wrapper__button" [class.active]="activeLayout==='grid'" role="button" (click)="onGridClick()">
+    <mat-icon svgIcon="{{gridIconName}}"></mat-icon>
+  </div>
+  <div class="actions-wrapper__button" role="button" (click)="onAddClick()">
+    <mat-icon svgIcon="{{addIconName}}"></mat-icon>
+  </div>
+</div>

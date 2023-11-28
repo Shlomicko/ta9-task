@@ -1,0 +1,28 @@
+@import 'assets/css/colors';
+
+.user {
+  padding: 1rem;
+  color: $color-green-dark;
+  background-color: $color-yellow-bright;
+
+  &:hover {
+    border-bottom: .1rem solid $color-green-lite;
+    .user__name {
+      color: $color-yellow-warm;;
+    }
+
+  }
+
+  &.grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+  }
+
+  &__id {
+    font-weight: bold;
+  }
+}

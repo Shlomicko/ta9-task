@@ -1,0 +1,27 @@
+<div *ngIf="!!itemManagementForm" class="wrapper">
+  <div class="close-button" role="button" (click)="onCloseClick()">
+    <mat-icon [svgIcon]="'close'"></mat-icon>
+  </div>
+  <h2>{{title}}</h2>
+  <form class="items-form" [formGroup]="itemManagementForm">
+    <div>
+      <label class="items-form__label" for="name">Name:*</label>
+      <input class="items-form__input" type="text" id="name" name="name"
+             [formControl]="itemManagementForm?.controls.name" required>
+    </div>
+    <div>
+      <label class="items-form__label" for="phone">Phone:*</label>
+      <input class="items-form__input" type="tel" id="phone" name="phone"
+             [formControl]="itemManagementForm?.controls.phone" required>
+    </div>
+    <div>
+      <label class="items-form__label" for="email">Email:*</label>
+      <input class="items-form__input" type="email" id="email" name="email"
+             [formControl]="itemManagementForm?.controls.email" required>
+    </div>
+    <div class="items-form__buttons" >
+      <button (click)="saveItem()" class="items-form__buttons--submit" type="submit" [disabled]="itemManagementForm?.invalid">Save</button>
+      <button (click)="clearForm()" class="items-form__buttons--clear" type="submit">Reset</button>
+    </div>
+  </form>
+</div>
