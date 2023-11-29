@@ -1,9 +1,11 @@
 @import "assets/css/colors";
 
 :host {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  row-gap: .5rem;
   margin: 5rem;
-  height: 100%;
+  height: -webkit-fill-available;
 }
 
 .form-wrap {

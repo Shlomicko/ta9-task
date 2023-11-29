@@ -20,7 +20,7 @@
              [formControl]="itemManagementForm?.controls.email" required>
     </div>
     <div class="items-form__buttons" >
-      <button (click)="saveItem()" class="items-form__buttons--submit" type="submit" [disabled]="itemManagementForm?.invalid">Save</button>
+      <button (click)="saveItem()" class="items-form__buttons--submit" type="submit" [disabled]="itemManagementForm?.invalid || itemManagementForm?.pristine">Save</button>
       <button (click)="clearForm()" class="items-form__buttons--clear" type="submit">Reset</button>
     </div>
   </form>

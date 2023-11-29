@@ -1,9 +1,15 @@
-import { Injectable } from '@angular/core';
+import {Injectable, TrackByFunction} from '@angular/core';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
-export class TrackByService {
+export class TrackByService<Item = any> {
 
-  constructor() { }
+  byProperty(prop: keyof Item): TrackByFunction<Item> {
+    return (index, item) => item[prop];
+  }
+
+  byIndex(): TrackByFunction<Item> {
+    return (index, item) => index;
+  }
 }

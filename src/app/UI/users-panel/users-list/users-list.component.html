@@ -1,5 +1,5 @@
 <div [ngClass]="{'list-layout': layout==='list', 'grid-layout': layout==='grid'}">
-  <ng-container *ngFor="let user of users">
+  <ng-container *ngFor="let user of users; trackBy: track.byProperty('id')">
     <app-user-item class="user-item" (itemClick)="onUserItemClick($event)" [layout]="layout" [user]="user"></app-user-item>
   </ng-container>
 </div>

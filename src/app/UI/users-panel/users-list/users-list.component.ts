@@ -3,6 +3,7 @@ import {User} from "@core/models/user";
 import {ItemsLayout} from "@core/models/items-layout.type";
 import {Store} from "@ngrx/store";
 import {ShowUserFormActions} from "@store//app.actions";
+import {TrackByService} from "@services/track-by.service";
 
 @Component({
   selector: 'app-items-list',
@@ -14,7 +15,7 @@ export class UsersListComponent {
   @Input() users!: User[] | null;
   @Input() layout: ItemsLayout = 'list';
 
-  constructor(private store: Store) {
+  constructor(private store: Store, readonly track: TrackByService<User>) {
   }
 
   onUserItemClick(user: User): void {
