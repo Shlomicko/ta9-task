@@ -7,7 +7,7 @@ import {UsersListComponent} from "@UI/users-panel/users-list/users-list.componen
 import {UserItemComponent} from "@UI/users-panel/user-item/user-item.component";
 import {
   UsersListHeaderComponent
-} from "@UI/users-panel/users-container/users-list-header/users-list-heade.component";
+} from "@UI/users-panel/users-container/users-list-header/users-list-header.component";
 import {SearchBarModule} from "@UI/search-bar/search-bar.module";
 import {ItemsWindowRoutingModule} from "@UI/users-panel/users-panel-routing.module";
 import {ActionButtonsModule} from "@UI/layout-action-buttons/action-buttons.module";

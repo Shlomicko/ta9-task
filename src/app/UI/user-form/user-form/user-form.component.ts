@@ -20,8 +20,8 @@ export class UserFormComponent implements OnInit {
   @Output() close = new EventEmitter<void>()
   title = '';
 
-  protected itemManagementForm: FormGroup<ItemManageFormControls>;
-  protected user$ = this.store.select(selectShowUserForm);
+  itemManagementForm: FormGroup<ItemManageFormControls>;
+  user$ = this.store.select(selectShowUserForm);
 
   private editOrCreateAction!: (typeof UsersActions.editUser) | (typeof UsersActions.addUser);
 

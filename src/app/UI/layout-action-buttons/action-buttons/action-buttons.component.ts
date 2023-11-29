@@ -10,11 +10,11 @@ import {Store} from "@ngrx/store";
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ActionButtonsComponent {
-  protected listIconName = 'list';
-  protected gridIconName = 'grid';
-  protected addIconName = 'plus_circle';
+  listIconName = 'list';
+  gridIconName = 'grid';
+  addIconName = 'plus_circle';
 
-  protected activeLayout: ItemsLayout = 'list';
+  activeLayout: ItemsLayout = 'list';
 
   @Output() setListView: EventEmitter<void> = new EventEmitter<void>();
   @Output() setGridView: EventEmitter<void> = new EventEmitter<void>();

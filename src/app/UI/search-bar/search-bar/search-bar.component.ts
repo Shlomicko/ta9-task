@@ -28,13 +28,13 @@ export class SearchBarComponent implements ControlValueAccessor {
   @Input() required: boolean = false;
 
   private innerValue: any = '';
-  protected onChange: any = () => {};
-  protected onTouched: any = () => {};
+  onChange: any = () => {};
+  onTouched: any = () => {};
 
-  protected disabled = false;
-  protected valueControl = new FormControl<string>('', { nonNullable: true });
+  disabled = false;
+  valueControl = new FormControl<string>('', { nonNullable: true });
 
-  protected onInputChange(event: Event): void {
+  onInputChange(event: Event): void {
     this.onChange((event.target as HTMLInputElement).value);
   }
 

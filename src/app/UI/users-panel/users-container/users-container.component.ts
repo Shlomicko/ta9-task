@@ -16,11 +16,11 @@ import {ItemsLayout} from "@core/models/items-layout.type";
 })
 export class UsersContainerComponent implements OnInit {
 
-  protected queryControl = new FormControl<string>('', {nonNullable: true});
-  protected usersData$!: Observable<User[]> | null;
-  protected itemsLayout: ItemsLayout = 'list';
+  queryControl = new FormControl<string>('', {nonNullable: true});
+  usersData$!: Observable<User[]> | null;
+  itemsLayout: ItemsLayout = 'list';
 
-  protected showForm$ = this.store.select(selectShowUserForm);
+  showForm$ = this.store.select(selectShowUserForm);
   private users$ = this.store.select(selectUsers);
 
 

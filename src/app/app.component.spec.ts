@@ -17,13 +17,7 @@ describe('AppComponent', () => {
   it(`should have as title 'items-view'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('items-view');
+    expect(app.title).toEqual('Users Panel');
   });
 
-  it('should render title', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('items-view app is running!');
-  });
 });

@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ItemsListHeaderComponent } from './items-list-header.component';
+import { UsersListHeaderComponent } from './users-list-header.component';
 
-describe('ItemsListHeaderComponent', () => {
-  let component: ItemsListHeaderComponent;
-  let fixture: ComponentFixture<ItemsListHeaderComponent>;
+describe('UsersListHeaderComponent', () => {
+  let component: UsersListHeaderComponent;
+  let fixture: ComponentFixture<UsersListHeaderComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [ItemsListHeaderComponent]
+      declarations: [UsersListHeaderComponent]
     });
-    fixture = TestBed.createComponent(ItemsListHeaderComponent);
+    fixture = TestBed.createComponent(UsersListHeaderComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
